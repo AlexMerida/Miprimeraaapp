@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Mi primera app</string>
+    <string name="app_name">My name is Jeff</string>
+    <string name="UserName">UserName</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Edad">Age</string>
+    <string name="Usuario">User</string>
+    <string name="Mail">Email</string>
+    <string name="Contrasena">Password</string>
+    <string name="Años">Age</string>
+    <string name="Acceso">Access</string>
+    <string name="Borrar">Delete</string>
 </resources>
