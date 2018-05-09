@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
         intent3.putExtra("Perfil", "Formulario");
         startActivity(intent3);
     }
+    public void onClick5 (View view)
+    {
+        Intent intent4 = new Intent(this, Image.class);
+        intent4.putExtra("Imagen", "Imagen");
+        startActivity(intent4);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

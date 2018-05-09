@@ -37,4 +37,10 @@
         android:layout_height="wrap_content"
         android:onClick="onClick4"
         android:text="Formulario" />
+    <Button
+        android:id="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick5"
+        android:text="Imagen" />
 </LinearLayout>

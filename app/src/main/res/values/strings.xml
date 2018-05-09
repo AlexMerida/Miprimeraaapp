@@ -10,4 +10,7 @@
     <string name="Años">Age</string>
     <string name="Acceso">Access</string>
     <string name="Borrar">Delete</string>
+    <string name="Registrar">Register new account</string>
+    <string name="userError">User no puede estar vacio</string>
+    <string name="passError">Debe haber contraseña</string>
 </resources>
