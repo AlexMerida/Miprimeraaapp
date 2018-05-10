@@ -13,7 +13,7 @@ public class Image extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
     }
-    Intent intentA = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+    Intent intentA = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=uHyXDoZveM4"));
     public void onClickA(View view){
         startActivity(intentA);
     }

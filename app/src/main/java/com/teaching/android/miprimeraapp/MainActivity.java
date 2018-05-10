@@ -34,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         intent4.putExtra("Imagen", "Imagen");
         startActivity(intent4);
     }
+    public void onClick6 (View view)
+    {
+        Intent intent4 = new Intent(this, ListActivity.class);
+        intent4.putExtra("Lista", "Lista");
+        startActivity(intent4);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
