@@ -1,10 +1,16 @@
 package com.teaching.android.miprimeraapp;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -13,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 public class ListActivity extends AppCompatActivity {
 
@@ -26,6 +33,9 @@ public class ListActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.list_view);
         listView.setAdapter(new MyAdapter());
+
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -61,5 +71,16 @@ public class ListActivity extends AppCompatActivity {
             return RowView;
         }
     }
-
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.list_menu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected (MenuItem item){
+        Intent LoginIntent = new Intent(this,LoginActivity.class);
+        startActivity(LoginIntent);
+        return true;
+    }
 }

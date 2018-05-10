@@ -17,8 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity2" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".LoginActivity"/>
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".ListActivity"/>
         <activity android:name=".Image" />
         <activity android:name=".ListActivity"></activity>
     </application>
