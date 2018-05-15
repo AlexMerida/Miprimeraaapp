@@ -20,6 +20,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.teaching.android.miprimeraapp.Interactors.GamesInteractors;
+
 
 public class ListActivity extends AppCompatActivity {
 
@@ -37,12 +39,16 @@ public class ListActivity extends AppCompatActivity {
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(ListActivity.this, "Posición seleccionada "+ position, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(ListActivity.this,GameDetailActivity.class);
+                intent.putExtra("position",position);
+                startActivity(intent);
             }
-        });
+        }
+        );
     }
     private class MyAdapter extends BaseAdapter{
         @Override

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GameDetailActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/articulo"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="159dp"
+        android:src="@drawable/tales_of"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:layout_marginTop="68dp"
+        />
+    <TextView
+        android:layout_below="@+id/fondo"
+        android:id="@+id/texto"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/texto"
+        android:id="@+id/websiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Website"/>
+
+</RelativeLayout>

@@ -19,12 +19,14 @@
         <activity android:name=".MainActivity2" />
         <activity
             android:name=".ProfileActivity"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".LoginActivity"
-            android:parentActivityName=".ListActivity"/>
+            android:parentActivityName=".ListActivity" />
         <activity android:name=".Image" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".ListActivity" />
+        <activity android:name=".FragmentTestActivity" />
+        <activity android:name=".GameDetailActivity" android:parentActivityName=".ListActivity"></activity>
     </application>
 
 </manifest>

@@ -13,4 +13,13 @@
     <string name="Registrar">Register new account</string>
     <string name="userError">User no puede estar vacio</string>
     <string name="passError">Debe haber contraseña</string>
+    <string name="dialog_message">¿Seguro que quiere borrar el usuario?</string>
+    <string name="dialog_title">Confirmar</string>
+    <string name="ok">SI</string>
+    <string name="not">NO</string>
+    <string name="cancel">Cancelar</string>
+    <string name="Game">Game Detail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
